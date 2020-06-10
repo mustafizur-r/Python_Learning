@@ -2,8 +2,8 @@ from tkinter import *
 
 root = Tk()
 root.configure(bg="red")
-#root.geometry("750x500")
 root.title("Calculator")
+root.resizable(False, False)
 e = Entry(root, width=50, borderwidth=5)
 e.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
@@ -78,24 +78,5 @@ button_div.grid(row=3, column=3)
 button_clear.grid(row=4, column=0)
 button_0.grid(row=4, column=1)
 button_equal.grid(row=4, column=2)
-
-
-
-
-
-#myLabel = Label(root, text="Hello Saju")
-#myLabel1 = Label(root, text="Hello This is Saju")
-
-#myLabel.grid(row=0, column=0)
-#myLabel1.grid(row=1, column=1)
-
-
-#def submit():
-#    l = Label(root,text="Hello! This is " + e.get())
-  #  l.pack()
-
-
-#btn = Button(root, text="Submit", command=submit, fg="black", bg="blue")
-#btn.pack()
 
 root.mainloop()
